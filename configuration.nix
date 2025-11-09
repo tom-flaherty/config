@@ -122,7 +122,7 @@
     mission-center
     discord
     bash
-    chromium
+    ungoogled-chromium
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
