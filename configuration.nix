@@ -11,8 +11,14 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.enable = false;  
   boot.loader.efi.canTouchEfiVariables = true;
+  # Enable GRUB
+  boot.loader.grub.enable = true;
+  boot.loader.grub.version = 2;
+  boot.loader.grub.efiSupport = true;
+  boot.loader.grub.device = "nodev";
+  boot.loader.grub.useOSProber = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -117,6 +123,7 @@
     mission-center
     discord
     bash
+    chromium
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
