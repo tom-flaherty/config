@@ -123,6 +123,7 @@
     discord
     bash
     ungoogled-chromium
+    gnome-terminal
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
