@@ -62,6 +62,7 @@
     gnome-maps
     gnome-calendar
     gnome-tour
+    gnome-console
   ];
 
   # Configure keymap in X11
