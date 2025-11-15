@@ -124,11 +124,11 @@
 
     # General Development
     git
-    
+    gnumake
+
     # C
     gcc-arm-embedded
     cmake
-    #make
 
     # Bash
     bash
