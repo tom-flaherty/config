@@ -3,7 +3,7 @@
 parent_working_directory=${PWD##*/}
 pwd_basename=${parent_working_directory:-/}
 if [[ $pwd_basename != "nixconf" ]]; then
-    echo "Error: Not running in nixconf director"
+    echo "Error: Not running in nixconf directory"
     exit 1
 fi
 
