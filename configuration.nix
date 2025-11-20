@@ -134,7 +134,7 @@
     gcc
     gnumake
     cmake
-    openssl.dev
+    openssl
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
