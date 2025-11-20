@@ -134,6 +134,7 @@
     gcc
     gnumake
     cmake
+    openssl
     openssl.dev
   ];
 
