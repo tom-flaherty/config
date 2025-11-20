@@ -130,7 +130,7 @@
     gnome-terminal
     
     pkg-config
-    libgcc
+    gcc
     gnumake
     cmake
   ];
