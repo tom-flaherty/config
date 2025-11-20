@@ -134,6 +134,8 @@
     cmake
     openssl
     openssl.dev
+    
+    qemu
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
