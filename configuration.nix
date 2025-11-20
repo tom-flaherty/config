@@ -118,21 +118,23 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    git
-    rustup
-    python3
-    uv
-    vscode
     mission-center
     discord
-    bash
     ungoogled-chromium
     gnome-terminal
     
+    # Common software development packages
+    vscode
+    bash
+    git
+    python3
+    uv
+    rustup
     pkg-config
     gcc
     gnumake
     cmake
+    openssl
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
