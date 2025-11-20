@@ -128,14 +128,6 @@
     python3
     uv
     rustup
-    pkg-config
-    gcc
-    gnumake
-    cmake
-    openssl
-    openssl.dev
-    
-    qemu
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
