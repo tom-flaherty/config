@@ -136,6 +136,10 @@
     cmake
     libgcc
     
+    # Python
+    python314
+    uv
+    
     # Raspberry Pico development
     picotool
     minicom
