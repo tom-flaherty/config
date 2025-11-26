@@ -154,6 +154,7 @@
     openssl.dev
     
     qbittorrent
+    popsicle
     
   ];
 
