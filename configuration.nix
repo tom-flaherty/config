@@ -62,7 +62,6 @@
   
   # TF Disable unused gnome core applications
   environment.gnome.excludePackages = with pkgs; [
-    gnome-music
     gnome-contacts
     gnome-connections
     gnome-maps
