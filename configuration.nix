@@ -111,6 +111,7 @@
       ungoogled-chromium
       gnome-terminal
       vscode
+      clementine
     ];
   };
 
