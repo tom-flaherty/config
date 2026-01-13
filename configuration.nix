@@ -116,6 +116,8 @@
       helix
       libreoffice
       kitty
+      alacritty
+      ghostty
     ];
   };
 
