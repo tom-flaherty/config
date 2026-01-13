@@ -115,6 +115,7 @@
       rhythmbox
       helix
       libreoffice
+      kitty
     ];
   };
 
