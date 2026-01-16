@@ -93,6 +93,33 @@ Install
 
 ## Manual
 
+### Dual Boot
+
+If you haven't already, install the following packages using pacman:
+
+- grub
+- grub-btrfs
+- efibootmgr
+- os-prober
+
+If grub is not yet configured, you can use these commands to install grub (assuming efi is mounted at /boot)
+
+```bash
+sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+sudo grub-mkconfig
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+Next, edit `/etc/default/grub` and uncomment `GRUB-DISABLE-OS-PROBER=false`. Then rerun `sudo grub-mkconfig`.
+
+### Bluetooth
+
+If bluetooth does not work, you may need to start the service. To configure the bluetooth service to start automatically, the following command can be used.
+
+```bash
+sudo systemctl enable bluetooth.service
+```
+
 ### Locale Gen
 
 ```bash
@@ -104,6 +131,17 @@ sudo locale-gen
 ```
 Reboot. Open Settings -> System -> Region & Language. Set to English (United Kingdom). Log out and log back in. 
 Settings -> Keyboard. Update keyboard settings
+
+### Gnome3 Settings
+
+- Keyboard settings
+- Ensure monitor is at max resolution and frame rate
+- Power -> Disable automatic suspend. Change power button function
+- Add the following keyboard shortcuts
+
+| Shortcut     | Command |
+|--------------|---------|
+| ctrl+shift+t | ghostty |
 
 ### Git & SSH Keygen
 
@@ -118,6 +156,10 @@ git config --global user.name "Your Name"
 
 ```bash
 sudo pacman -Syu \
+    grub \
+    grub-btrfs \
+    efibootmgr \
+    os-prober \
     firefox \
     steam \
     mission-center \
@@ -135,3 +177,7 @@ rustup install stable
 
 cargo install bottom
 ```
+
+### Steam
+
+Configure ctrl shift O to bring up the performance overlay
