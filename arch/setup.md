@@ -167,6 +167,12 @@ alias hx="helix"
 export PATH="/home/tomf/.cargo/bin:$PATH"
 ```
 
+You can replace the PS1 defined in the .bashrc
+
+```bash
+PS1='\[\e[34m\]┌[\[\e[0m\]\u:\h\[\e[34m\]]-[\W]\n\[\e[34m\]╰─$\[\e[0m\] '
+```
+
 ### VS Code
 
 By default vs code uses the hardware codes from your keyboard. This means that
