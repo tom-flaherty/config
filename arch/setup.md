@@ -201,6 +201,7 @@ sudo pacman -Syu \
     python-ruff \
     uv \
     bash-language-server \
+    marksman \
     --noconfirm
 
 rustup install stable

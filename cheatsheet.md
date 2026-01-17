@@ -52,7 +52,7 @@ Every movement in Helix is a selection.
 | Insert mode, end of line              | A                                     |
 | Insert mode, new line below           | o                                     |
 | Insert mode, new line above           | O                                     |
-| Delete selection and insert mode      | c                                     |
+| Delete selection and insert (change)  | c                                     |
 | Delete selection (This is cut!)       | d                                     |
 | Paste after selection                 | p                                     |
 | Paste before selection                | P                                     |
@@ -61,4 +61,27 @@ Every movement in Helix is a selection.
 | Paste from clipboard                  | space + p                             |
 | Replace character(s)                  | r + character                         |
 | Replace selection with yanked text    | R                                     |
+| Select mode. Like holding shift       | v. Press v or esc to exit             |
+| Undo                                  | u                                     |
+| Redo                                  | U                                     |
+| File picker, recurses through dirs    | space + f                             |
+| File picker, only current dir         | space + F                             |
+| Action picker                         | space + ?                             |
+| See modified files (git changes)      | space + g                             |
+| Open the previously used picker       | space + '                             |
+| Symbol picker (LSP)                   | space + s                             |
+| Show info on current selection (LSP)  | space + k                             |
+| Search current file, top to bottom    | /                                     |
+| Search - Go to next occurance         | n                                     |
+| Search - Go to previous occurance     | N                                     |
+| Search current file, bottom to top    | ?                                     |
+| Search for current selection          | *                                     |
+| Ctrl + d from vscode                  | *, v, n. Back to one cursor with ,    |
+| Global file content search            | space + /                             |
+| Repeat insertion                      | . (full stop)                         |
+| Repeat motion                         | alt + . (full stop)                   |
+| Comment or uncomment selected linet   | ctrl + c, or space + c                |
+| Multiline comment                     | space + C                             |
+| Join lines (remove newlines)          | J                                     |
+| Indent or de-indend line(s)           | < or >                                |
 
