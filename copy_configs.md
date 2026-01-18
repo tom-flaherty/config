@@ -1,11 +1,18 @@
 ## Ghostty
 
+Copy system config to this repo
 ```bash
 gio trash --force ./ghostty && \
 cp -R ~/.config/ghostty ./ghostty && \
-git add ./helix/* && \
+git add ./ghostty/* && \
 git commit -m "update ghostty config" && \
 git push
+```
+
+Copy this repo's config to system config
+```bash
+gio trash --force ~/.config/ghostty && \
+cp -R ./ghostty ~/.config/ghostty
 ```
 
 ## Helix
