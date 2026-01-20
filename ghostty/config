@@ -54,7 +54,7 @@
 # ---------------
 
 font-family = Adwaita Mono
-font-size = 18
+font-size = 16
 
 theme = Dracula+
 
@@ -66,7 +66,7 @@ theme = Dracula+
 # Creating new split
 keybind = ctrl+shift+a=new_split:auto
 keybind = ctrl+shift+d=new_split:down
-keybind = ctrl+shift+r=new_split:right
+keybind = ctrl+shift+s=new_split:right
 # Goto split
 keybind = ctrl+shift+arrow_left=goto_split:left
 keybind = ctrl+shift+arrow_up=goto_split:up
@@ -75,10 +75,10 @@ keybind = ctrl+shift+arrow_down=goto_split:down
 # Split zoom
 keybind = ctrl+shift+z=toggle_split_zoom
 # Resizing splits
-keybind = super+ctrl+shift+arrow_down=resize_split:down,20
-keybind = super+ctrl+shift+arrow_left=resize_split:left,20
-keybind = super+ctrl+shift+arrow_right=resize_split:right,20
-keybind = super+ctrl+shift+arrow_up=resize_split:up,20
+keybind = super+ctrl+shift+arrow_down=resize_split:down,16
+keybind = super+ctrl+shift+arrow_left=resize_split:left,16
+keybind = super+ctrl+shift+arrow_right=resize_split:right,16
+keybind = super+ctrl+shift+arrow_up=resize_split:up,16
 # Equalise split sizing
 keybind = ctrl+shift+e=equalize_splits
 
@@ -123,3 +123,6 @@ keybind = ctrl+shift+page_up=scroll_page_fractional:-0.5
 keybind = ctrl+shift+page_down=scroll_page_fractional:0.5
 # # Quick style terminal
 # keybind = ctrl+shift+y=toggle_quick_terminal
+# Fullscreen
+keybind = ctrl+shift+f=toggle_fullscreen
+

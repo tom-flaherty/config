@@ -194,6 +194,7 @@ sudo pacman -Syu \
     mission-center \
     fastfetch \
     git \
+    less \
     ghostty \
     fzf \
     helix \
@@ -236,7 +237,13 @@ sudo pacman -S \
 sudo tlmgr install cm-super
 # You can now use:
 # pandoc setup.md --pdf-engine=xelatex -o out.pdf
+
+# OBS for screen recording
+sudo pacman -S \
+    obs-studio \
+    luajit
 ```
+
 
 ### Steam
 
