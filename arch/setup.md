@@ -215,6 +215,8 @@ sudo pacman -Syu \
     bash-language-server \
     marksman \
     alsa-scarlett-gui \
+    discord \
+    chromium \
     --noconfirm
 
 rustup install stable
