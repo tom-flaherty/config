@@ -217,6 +217,11 @@ sudo pacman -Syu \
     mission-center \
     chromium \
     obsidian \
+```
+
+#### PCB Design
+
+```bash
     kicad \
     kicad-library \
     kicad-library-3d \
@@ -245,6 +250,7 @@ sudo pacman -Syu \
     uv \
     bash-language-server \
     marksman \
+    docker \
 ```
 
 #### pacman - Music
@@ -257,7 +263,8 @@ sudo pacman -Syu \
 ## Other
 
 rustup install stable
-cargo install bottom bat
+cargo install bottom bat cargo-binstall
+cargo binstall --strategies crate-meta-data jj-cli
 
 git clone https://github.com/pop-os/popsicle.git
 cd popsicle
@@ -267,6 +274,15 @@ pipx install ty
 pipx ensurepath
 
 sudo flatpak install app/cc.arduino.IDE2/x86_64/stable
+
+Install the [nix package manager]() for reproducible builds:
+
+```bash
+# Multi user installation
+sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
+# Add the following line to /etc/nix/nix.conf
+# experimental-features = nix-command flakes
+sudo nano /etc/nix/nix.conf
 ```
 
 To upgrade, you can use these commands:
