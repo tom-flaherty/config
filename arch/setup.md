@@ -361,3 +361,34 @@ Configure ctrl shift o to bring up the performance overlay. (In the In Game sect
 Configure steam to boot into library (In the Interface section).
 
 Limit download speed to 40000 so that other applications can still use WiFi.
+
+### Add secondary drive
+
+Normally you will have to mount secondary drives every time you boot.
+
+Run this command to see all drives:
+
+```bash
+sudo blkid
+```
+
+Figure out the UUID of the drive you want to add.
+
+Create a mount point to map the drive to
+
+```bash
+sudo mkdir -p /mnt/mount_point_name
+sudo chown tomf:tomf /mnt/mount_point_name
+```
+
+Now add that drive to `/etc/fstab`, with an entry similar to the following
+
+```
+UUID=805325bc-f2c8-412d-be16-84c17f6b7689 /mnt/mount_point_name ext4 defaults,noatime,discard,nofail,x-systemd.device-timeout=10 0 2
+```
+
+Note the UUID from blkid, the mount point that was created, the filesystem is ext4, and a bunch of options. One of the options is to continue booting if this drive cannot be mounted within 10 seconds.
+
+### Power settings
+
+Disable automatic suspend.
