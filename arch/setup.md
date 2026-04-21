@@ -226,6 +226,9 @@ Include = /etc/pacman.d/mirrorlist
 sudo pacman -Syu \
 ```
 
+IMPORTANT! Arch does not support partial upgrades - always upgrade all packages
+after a package refresh.
+
 #### pacman - System
 
 ```bash
@@ -312,6 +315,13 @@ make && sudo make install
 ```bash
 pipx install ty
 pipx ensurepath
+```
+
+```bash
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo systemctl enable docker
+sudo systemctl start docker
 ```
 
 ```bash
